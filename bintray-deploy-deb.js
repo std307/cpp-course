@@ -1,14 +1,11 @@
 {
     "package": {
         "name": "helloworld-0.0.${TRAVIS_BUILD_NUMBER}-Linux",
-        "repo": "cpp-homework1",
-        "subject": "otuscourse",
+        "repo": "cpp-homework1"
     },
-
     "version": {
         "name": "${TRAVIS_BUILD_NUMBER}"
     },
-
     "files":
         [
             { 
@@ -23,3 +20,4 @@
         ],
     "publish": true
 }
+
