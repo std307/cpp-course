@@ -10,8 +10,8 @@
     "files":
         [
             { 
-                "includePattern": "helloworld-0.0.42-Linux.deb",
-                "uploadPattern": "42",
+                "includePattern": "(.*\.deb)",
+                "uploadPattern": "$1",
                 "matrixParams": {
                     "deb_distribution": "trusty",
                     "deb_component": "main",

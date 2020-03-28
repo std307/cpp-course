@@ -12,7 +12,6 @@ deploy:
   provider: bintray
   skip_cleanup: true
   user: std307
-  key: ${BINTRAY_API_KEY}
 
   file: bintray-deploy-deb.js
   on:
