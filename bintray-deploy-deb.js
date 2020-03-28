@@ -1,6 +1,6 @@
 {
     "package": {
-        "name": "helloworld-0.0.42-Linux.deb",
+        "name": "cpp-homework1",
         "repo": "cpp-homework1",
         "subject": "otuscourse"
     },
