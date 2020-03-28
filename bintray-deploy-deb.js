@@ -1,7 +1,8 @@
 {
     "package": {
-        "name": "helloworld-0.0.42-Linux",
-        "repo": "cpp-homework1"
+        "name": "helloworld-0.0.42-Linux.deb",
+        "repo": "cpp-homework1",
+        "subject": "std307"
     },
     "version": {
         "name": "42"
