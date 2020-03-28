@@ -9,9 +9,11 @@ script:
 - cmake --build . --target test
 - cmake --build . --target package
 deploy:
-  provider: script
+  provider: bintray
   skip_cleanup: true
+  user: std307
+  key: "NknzfQzmZY3Q8/0d1xw6c9CxnYoJD3hlUwebD1ZbQcZuqz/BHnOqiJyib3ufMzCMwk86tZUYLsorHbD8EfydSmUu//ccSPlEX+qCXGiYgxzqGlRJPlqWMFDQBLuVERuSXSl6oIABq/DvSz08uFB6Pgj0KRONHI+qxfEh+SE8s3s36IXkWBAljLSSrarQuSUGZaLLJhf7melvOG32mlIS593gUPm1efdn+nrwIHFbUj4GtmvY0hCTYxGDafGa1/Y/xnDfrIP1PD89y2aAxYuxkMlgKwWBwVypnGA10gsKS1ps+UiurXCWGfHvyvNWhRbF4MhJWH1zyHxbTa/JXgwQn4vSyOdAPqxrLeW+J8guXonbCuqek31/cQUDHYgDtDmwAwOa0VE/c3L8Mcrb+bEQsEyA/GdmJQbnvj+7VeiwzXAdeNP+WsB+nVpL3uTqrUf5HE+66SX/n0rjR9Oy4gJqqR2zXgMR3N4BwQxdkFAuv/FB+sNP95Gq/jnQWITnJ+5G0RJMLpJ65Bn31rMIn8zVmgX2/qimazxNfW7v/UVac1p7F8DSij6bXUEk3ny15tvjeIwe4KpmSCc5Fgh5oZGfg2k0ncm/eETlJ7qOzYqgbKmP3Yz9aSTUMJ6WlXVxvrRzrKya5viXkryzwQYZjE+PjmgkaxrX4oV/wlxV3FU+oG0="
+  file: helloworld-0.0.${TRAVIS_BUILD_NUMBER}-Linux.deb
   on:
     branch: homework1
-  script:
-  - curl -T helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -ustd307:$BINTRAY_API_KEY "https://api.bintray.com/content/otuscourse/cpp-homework1/cpp-homework1/$TRAVIS_BUILD_NUMBER/helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
+  
