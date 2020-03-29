@@ -2,7 +2,10 @@
     "package": {
         "name": "cpp-homework1",
         "repo": "cpp-homework1",
-        "subject": "otuscourse"
+        "subject": "otuscourse",
+	"desc": "This is my first homework in Otus C++ Course",
+        "issue_tracker_url": "https://github.com/std307/cpp-course/issues",
+        "vcs_url": "https://github.com/std307/cpp-course.git"
     },
     "version": {
         "name": "${TRAVIS_BUILD_NUMBER}"	    
@@ -10,7 +13,7 @@
     "files":
         [
             { 
-                "includePattern": "\./([^/]*\.deb)$",
+                "includePattern": "\./([^\/]*\.deb)$",
                 "uploadPattern": "$1",
                 "matrixParams": {
                     "deb_distribution": "trusty",
