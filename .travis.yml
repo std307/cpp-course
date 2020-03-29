@@ -8,6 +8,8 @@ script:
 - cmake --build .
 - cmake --build . --target test
 - cmake --build . --target package
+before_deploy:
+  - sed -i "s/\$\{TRAVIS_BUILD_NUMBER\}/${TRAVIS_BUILD_NUMBER}/g" bintray-deploy-deb.json       
 deploy:
   provider: bintray
   skip_cleanup: true

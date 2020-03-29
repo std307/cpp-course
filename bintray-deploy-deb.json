@@ -5,12 +5,12 @@
         "subject": "otuscourse"
     },
     "version": {
-        "name": "29"	    
+        "name": "${TRAVIS_BUILD_NUMBER}"	    
     },	    
     "files":
         [
             { 
-                "includePattern": "\.\/([^\/]*\.deb)$",
+                "includePattern": "\./([^/]*\.deb)$",
                 "uploadPattern": "$1",
                 "matrixParams": {
                     "deb_distribution": "trusty",
