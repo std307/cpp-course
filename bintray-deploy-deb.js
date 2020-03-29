@@ -30,4 +30,3 @@
         ],
     "publish": true
 }
-
