@@ -13,7 +13,8 @@
     "files":
         [
             { 
-                "includePattern": "\.\/[^_](.*\.deb)$",
+                "includePattern": "\./(.*\.deb)$",
+		"excludePattern": ".*/_CPack_Packages/.*",
                 "uploadPattern": "$1",
                 "matrixParams": {
                     "deb_distribution": "trusty",
