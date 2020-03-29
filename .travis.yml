@@ -13,7 +13,7 @@ deploy:
   skip_cleanup: true
   user: std307
   key: ${BINTRAY_API_KEY}
-  file: bintray-deploy-deb.js
+  file: bintray-deploy-deb.json
   on:
     branch: homework1
   
