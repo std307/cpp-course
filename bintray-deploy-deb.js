@@ -10,7 +10,7 @@
     "files":
         [
             { 
-                "includePattern": "(.*\.deb)",
+                "includePattern": "\./(.*\.deb)",
                 "uploadPattern": "$1",
                 "matrixParams": {
                     "deb_distribution": "trusty",
