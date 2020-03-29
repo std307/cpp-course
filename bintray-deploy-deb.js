@@ -4,13 +4,10 @@
         "repo": "cpp-homework1",
         "subject": "otuscourse"
     },
-    "version": {
-        "name": "43"
-    },
     "files":
         [
             { 
-                "includePattern": "(.*\\.deb)",
+                "includePattern": "(.*\.deb)",
                 "uploadPattern": "$1",
                 "matrixParams": {
                     "deb_distribution": "trusty",
@@ -19,8 +16,8 @@
                 }
             },
             { 
-                "includePattern": "helloworld-0.0.25-Linux.deb",
-                "uploadPattern": "helloworld-0.0.25-Linux.deb",
+                "includePattern": "helloworld-0.0.26-Linux.deb",
+                "uploadPattern": "helloworld-0.0.26-Linux.deb",
                 "matrixParams": {
                     "deb_distribution": "trusty",
                     "deb_component": "main",
