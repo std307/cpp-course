@@ -5,7 +5,7 @@
         "subject": "otuscourse"
     },
     "version": {
-        "name": "27"	    
+        "name": "28"	    
     },	    
     "files":
         [
@@ -19,8 +19,8 @@
                 }
             },
             { 
-                "includePattern": "helloworld-0.0.27-Linux.deb",
-                "uploadPattern": "helloworld-0.0.27-Linux.deb",
+                "includePattern": "helloworld-0.0.28-Linux.deb",
+                "uploadPattern": "helloworld-0.0.28-Linux.deb",
                 "matrixParams": {
                     "deb_distribution": "trusty",
                     "deb_component": "main",
