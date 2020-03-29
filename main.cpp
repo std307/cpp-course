@@ -2,9 +2,17 @@
 
 #include <iostream>
 
-int main (int, char **)
+int main (int argc, char *argv[])
 {
-    std::cout << "Version: " << version() << std::endl;
+    if (argc > 1){
+	std::string arg = argv[1];
+	if (arg == "-v") {
+	   std::cout << "Version: " << version() << std::endl;
+	   return 0;
+	}
+    }
+
+    std::cout << "Hello, World!" << std::endl;
 
     return 0;
 }
