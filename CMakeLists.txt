@@ -63,7 +63,7 @@ set(CPACK_PACKAGE_VERSION_MINOR "${PROJECT_VERSION_MINOR}")
 set(CPACK_PACKAGE_VERSION_PATCH "${PROJECT_VERSION_PATCH}")
 
 set(CPACK_PACKAGE_CONTACT sk1723@bk.ru)
-set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "This is my first homework in Otus C++ Course")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "CMake: This is my first homework in Otus C++ Course")
 
 include(CPack)
 
