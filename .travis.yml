@@ -8,14 +8,12 @@ script:
 - cmake --build .
 - cmake --build . --target test
 - cmake --build . --target package
-before_deploy:
-  - sed -i "s/\${TRAVIS_BUILD_NUMBER}/${TRAVIS_BUILD_NUMBER}/g" bintray-deploy-deb.json       
 deploy:
-  provider: bintray
-  skip_cleanup: true
-  user: std307
-  key: ${BINTRAY_API_KEY}
-  file: bintray-deploy-deb.json
-  on:
-    branch: homework1
-  
+    provider: bintray
+    skip_cleanup: true
+    user: std307
+    key: ${BINTRAY_API_KEY}
+    file: bintray-deploy-deb.json
+    on:
+        branch: homework1
+

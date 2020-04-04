@@ -1,10 +1,17 @@
 cmake_minimum_required(VERSION 3.2)
 
-project(helloworld VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
+if(DEFINED ENV{TRAVIS_BUILD_NUMBER})
+    set(TRAVIS_BUILD_NUMBER $ENV{TRAVIS_BUILD_NUMBER})
+else()
+    set(TRAVIS_BUILD_NUMBER "1")
+endif()
+
+project(helloworld VERSION 0.0.${TRAVIS_BUILD_NUMBER})
 
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
 configure_file(version.h.in version.h)
+configure_file(bintray-deploy-deb.json ${CMAKE_BINARY_DIR}/bintray-deploy-deb.json)
 
 add_executable(helloworld_cli main.cpp)
 add_library(helloworld lib.cpp)
